@@ -150,3 +150,37 @@ for (let fruta in conteoFrutasWhile) {
 
 // ejercicio fibonaci  con for
 
+let n = 10; // cantidad de números a mostrar
+
+let a = 0;
+let b = 1;
+let c;
+
+console.log("Fibonacci con ciclo FOR:");
+
+for (let i = 1; i <= n; i++) {
+    console.log(a);
+    c = a + b;
+    a = b;
+    b = c;
+}
+
+// ejercicio fibonaci  con ciclo while
+
+let n2 = 10; // cantidad de números a mostrar
+
+let x = 0;
+let y = 1;
+let z;
+let contadorwhile = 1;
+
+console.log("Fibonacci con WHILE:");
+
+while (contador <= n2) {
+    console.log(x);
+    z = x + y;
+    x = y;
+    y = z;
+    contador++;
+}
+
