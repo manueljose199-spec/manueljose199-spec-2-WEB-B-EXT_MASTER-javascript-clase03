@@ -97,3 +97,56 @@ console.log("Total de la lista=", listaSuper.length)
 
 
 
+//pracrica campus 
+
+let fruta = ['Manzana', 'Pera', 'Manzana', 'Mango', 'Pera', 'Manzana', 'Mango', 'Pera']; /// Arreglo de frutas
+
+//Objeto para contar las frutas
+let conteoFrutas = {};
+
+//Contamos frutas usando ciclo FOR
+
+for (let i = 0; i < frutas.length; i++) {
+    let fruta = frutas[i];
+
+    if (conteoFrutas[fruta]) {
+        conteoFrutas[fruta]++;
+    } else {
+        conteoFrutas[fruta] = 1;
+    }
+}
+
+
+//Imprimir resultados
+console.log("Conteo usando FOR:");
+for (let fruta in conteoFrutas) {
+    console.log(fruta + ": " + conteoFrutas[fruta]);
+}
+
+console.log('----------------------');
+
+
+// Contar frutas usando WHILE
+let conteoFrutasWhile = {};
+let contador = 0;
+
+while (contador < frutas.length) {
+    let fruta = frutas[contador];
+
+    if (conteoFrutasWhile[fruta]) {
+        conteoFrutasWhile[fruta]++;
+    } else {
+        conteoFrutasWhile[fruta] = 1;
+    }
+
+    contador++;
+}
+
+//Imprimir resultados del ciclo WHILE
+console.log("Conteo usando WHILE:");
+for (let fruta in conteoFrutasWhile) {
+    console.log(fruta + ": " + conteoFrutasWhile[fruta]);
+}
+
+// ejercicio fibonaci  con for
+
